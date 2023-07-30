@@ -8,35 +8,37 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+            <Button x:Name="PlayAgainButton"  Text="Play again" FontSize="Large" Clicked="PlayAgainButton_Clicked"/>
+            <Label x:Name="TimeElapsed"   Text="Time Elapsed: 0.0 seconds" FontSize="Large" />
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <FlexLayout x:Name="AnimalButtons" Wrap="Wrap" MaximumWidthRequest="400">
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
+                <Button MaximumHeightRequest="100" MinimumHeightRequest="100" FontSize="60" BackgroundColor="LightBlue" BorderColor="Black" Clicked="Button_Clicked" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+
+            </FlexLayout>
+
+
+
+
 
         </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
-

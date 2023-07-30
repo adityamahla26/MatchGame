@@ -2,24 +2,38 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+        AnimalButtons.IsVisible = false;
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    void PlayAgainButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        AnimalButtons.IsVisible = true;
+        PlayAgainButton.IsVisible = false;
+        List<string> animalEmoji = new List<string>()
+        {
+            "🐶","🐶",
+            "🐮","🐮",
+            "🐨","🐨",
+            "🐒","🐒",
+            "🐷","🐷",
+            "🐍","🐍",
+            "🐳","🐳",
+            "🦧","🦧"
+        };
+        foreach (var button in AnimalButtons.Children.OfType<Button>())
+        {
+            int index = Random.Shared.Next(animalEmoji.Count);
+            string nextEmoji = animalEmoji[index];
+            button.Text = nextEmoji;
+            animalEmoji.RemoveAt(index);
+        }
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    void Button_Clicked(System.Object sender, System.EventArgs e)
+    {
+    }
 }
-
-
